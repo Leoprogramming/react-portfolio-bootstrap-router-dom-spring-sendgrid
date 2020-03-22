@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./App.css";
 
+import Footer from "./components/Footer";
+
 class App extends React.Component {
 
   constructor(props) {
@@ -34,6 +36,7 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
+          
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Leo Costa</Navbar.Brand>
 
@@ -46,6 +49,8 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
+          <Footer />
 
         </Container>
       </Router>
