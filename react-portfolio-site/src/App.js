@@ -19,18 +19,18 @@ class App extends React.Component {
       headerLinks: [
         { title: "Home", path: '/' },
         { title: "About", path: "/about" },
-        { title: "Contact", path: "/contact" },
+        { title: "Contact", path: "/contact" }
       ],
       home: {
         title: "Leo's Personal Website",
         subTitle: "My Projects",
-        descriptionText: "Checkout"
+        text: "Here Are Some Of My Projects:"
       },
       about: {
-        title: "About Me",
+        title: "About Me"
       },
       contact: {
-        title: "Contact Me",
+        title: "Contact Me"
       }
     }
   }
