@@ -60,13 +60,11 @@ handleCardClick = (id, card) => {
     });
 }
 
-
 makeItems = (items) => {
     return items.map(item => {
         return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
     })
 }
-
 
 render() {
     return(
