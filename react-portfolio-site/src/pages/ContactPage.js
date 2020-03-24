@@ -1,5 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 import Hero from "../components/Hero";
 import Content from "../components/Content";
@@ -17,13 +18,23 @@ class ContactPage extends React.Component {
     }
   }
 
+  handleChange = (event) => {
+    const target = event.target;
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    })
+  }
+
   render() {
     return(
       <div>
         <Hero title={this.props.title} />
 
         <Content>
-          <Form>
+          <Form onSubmit={this.handleSubmit}>
             <Form.Group>
               <Form.Label htmlFor="full-name">Full Name</Form.Label>
               <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
@@ -38,6 +49,13 @@ class ContactPage extends React.Component {
               <Form.Label htmlFor="message">Message</Form.Label>
               <Form.Control id="message" name="message" as="textarea"rows="4" value={this.state.message} onChange={this.handleChange}/>
             </Form.Group>
+
+            <Button class="d-inline-block" variant="primary" type="submit" disabled={this.state.disabled}>
+              Send
+            </Button>
+
+            {this.state.emailSent === true && <p className="d-inline success-msg">E-Mail Sent!</p>}
+            {this.state.emailSent === false && <p className="d-inline err-msg">E-Mail Not Sent!</p>}
 
           </Form>
         </Content>
