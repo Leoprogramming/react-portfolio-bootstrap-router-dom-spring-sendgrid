@@ -10,7 +10,9 @@ function AboutPage(props) {
       <Content>
         <p>Hi my name is Leo. I'm a Full-Stack engineer based in Berlin/Germany with experience in JavaScript, React, Ruby/Ruby On Rails, Node.js, Express.js, MongoDB.</p>
 
-        <p>My goal is to never stop learning and improving myself. Currently, that means gaining more experience with the technologies above and more. <strong style={{color: "red"}}>I am currently looking for a full-time position in Berlin, contact me!</strong></p>
+        <p>My goal is to never stop learning and improving myself. Currently, that means gaining more experience with the technologies above and more. 
+          <strong style={{color: "red"}}>I am currently looking for a full-time position in Berlin, contact me!</strong>
+        </p>
 
         <p>My dream is to one day start my own business and become an entrepreneur (currently working on some ideas).</p>
 
