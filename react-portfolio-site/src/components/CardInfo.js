@@ -12,7 +12,6 @@ function CardInfo(props) {
       <a href={props.link} target="_blank" rel="noopener noreferrer">View</a>
     </animated.div>
   );
-
 }
 
 export default CardInfo;

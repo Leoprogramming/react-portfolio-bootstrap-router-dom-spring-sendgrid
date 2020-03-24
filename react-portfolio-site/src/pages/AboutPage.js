@@ -2,8 +2,8 @@ import React from 'react';
 
 function AboutPage(props) {
   return(
-    <p>AboutPage Works!</p>
-    )
+    <Hero title={props.title} />
+  );
 }
 
 export default AboutPage;

@@ -10,7 +10,6 @@ function Card(props) {
       { props.item.selected && <CardInfo title={props.item.title} subTitle={props.item.subTitle} link={props.item.link} /> }
     </div>
   );
-
 }
 
 export default Card;

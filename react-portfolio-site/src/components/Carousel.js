@@ -25,9 +25,9 @@ class Carousel extends React.Component {
         {
         id: 1,
         title: "LinkedIn",
-        subTitle: "A social network for developers",
+        subTitle: "My Background",
         imgSrc: Profile,
-        link: "https://github.com/garrettlove8/evverest",
+        link: "https://www.linkedin.com/in/leonardo-costa-berlin/",
         selected: false
         },
 

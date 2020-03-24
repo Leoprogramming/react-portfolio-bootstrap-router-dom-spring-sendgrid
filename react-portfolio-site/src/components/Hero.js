@@ -19,7 +19,6 @@ function Hero(props) {
       </Container>
     </Jumbotron>
   );
-
 }
 
 export default Hero;
