@@ -28,6 +28,15 @@ class ContactPage extends React.Component {
     })
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    this.setState({
+      disabled: true,
+      emailSent: false
+    });
+  }
+
   render() {
     return(
       <div>
@@ -55,7 +64,7 @@ class ContactPage extends React.Component {
             </Button>
 
             {this.state.emailSent === true && <p className="d-inline success-msg">E-Mail Sent!</p>}
-            {this.state.emailSent === false && <p className="d-inline err-msg">E-Mail Not Sent!</p>}
+            {this.state.emailSent === false && <p className="d-inline error-msg">E-Mail Not Sent!</p>}
 
           </Form>
         </Content>
