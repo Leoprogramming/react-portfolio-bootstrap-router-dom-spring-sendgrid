@@ -23,7 +23,28 @@ app.get("/api", (req, res, next) => {
 
 app.post("/api/email", (req, res, next) => {
 
-  sendGrid.setApiKey("");
+  sendGrid.setApiKey("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");
+  const msg = {
+    to: "leo.costa.programming@gmail.com",
+    from: req.body.email,
+    subject: "Website Contact",
+    text: req.body.message
+  }
+
+  sendGrid.send(msg)
+    .then(result => {
+      res.status(200).json({
+        success: true
+      });
+
+    })
+    .catch(err => {
+      console.log("error: ", err);
+      res.status(401).json({
+        success: false
+      });
+
+    });
 });
 
 app.listen(3000, "0.0.0.0");
