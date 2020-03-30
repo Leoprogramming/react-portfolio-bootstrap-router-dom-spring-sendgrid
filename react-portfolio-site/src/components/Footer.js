@@ -13,7 +13,7 @@ function Footer() {
             Leo Costa
           </Col>
           <Col className="p-0 d-flex justify-content-end" md={3}>
-            This Website was made by Leo Costa
+            Website made by Leo Costa using React.
           </Col>
 
         </Row>

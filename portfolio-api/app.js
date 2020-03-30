@@ -21,4 +21,9 @@ app.get("/api", (req, res, next) => {
   res.send("API Status: Running")
 });
 
+app.post("/api/email", (req, res, next) => {
+
+  sendGrid.setApiKey("");
+});
+
 app.listen(3000, "0.0.0.0");
